@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
 
-motor = Motor(2,3,4,17,22,27) #motor driver pins
+motor = Motor(17,22,27,2,3,4) #motor driver pins
 runCamera = True
 GPIO.setup(14,GPIO.OUT) #defining the relay pin(relay control the UV light)
 GPIO.setup(15,GPIO.IN)  #defining the first pir module
